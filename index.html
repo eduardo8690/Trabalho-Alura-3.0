@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Infortunio</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Um dia desses andando de carro, a rua esburacada acabou furando o pneu do seu carro.</p>
+            <button class="btn-proximo" data-proximo="1">Trocar o pneu</button>
+            <button class="btn-proximo" data-proximo="2">Chamar ajuda</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Ao verificar o step você percebe que ele está furado, mas você tem um reserva.</p>
+            <button class="btn-proximo" data-proximo="3">Verificar o step reserva</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Você liga para o "Tonhão, Borracheiro". Mas estranhamente ele não atende</p>
+            <button class="btn-proximo" data-proximo="5">Verificar o telefone</button>
+            <button class="btn-proximo" data-proximo="6">Tentar mais uma vez</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>O outro step também está em péssimas condições.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>A torre de sinal está normal.</p>
+            <button class="btn-proximo" data-proximo="7">Olhar crédito</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Ele não atende de novo.</p>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Você está sem crédito, é por isso que a ligação não funciona.</p>
+            <button class="btn-proximo" data-proximo="9">Empurrar o carro</button>
+            <button class="btn-proximo" data-proximo="10">Esperar a ajuda do próximo</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Ao começar a empurrar o carro, seu pé entra em um buraco e acaba torcendo</p>
+            <button class="btn-proximo" data-proximo="10">Esperar alguém ajudar</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Já é de noite, apenas um carro aparece é da polícia, você recebe uma multa por estacionar em local proibido.</p>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
